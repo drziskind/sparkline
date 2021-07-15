@@ -1,5 +1,5 @@
 function getY(max, height, diff, value) {
-  return parseFloat((height - (value * height / max) + diff).toFixed(2));
+  return parseFloat((height - (value * height / max) + diff).toFixed(2)) || 0;
 }
 
 function removeChildren(svg) {
