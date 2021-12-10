@@ -69,7 +69,7 @@ export function sparkline(svg, entries, options) {
   const values = entries.map(entry => fetch(entry));
 
   // The rendering width will account for the spot size.
-  const width = parseFloat(svg.getBoundingClientRect().width) - spotDiameter * 2;
+  const width = svg.getBoundingClientRect().width - spotDiameter * 2;
 
   // Get the SVG element's full height.
   // This is used
